@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   Text
 } from 'react-native'
-import MyActivityIndicator from './components/activityIndicator'
+import MyDatePicker from './components/datePicker'
 // import { StackNavigator } from 'react-navigation'
 // import SectionList from './components/sectionList';
 // import MovieList from './components/movieLsit'
@@ -25,7 +25,7 @@ export default class App extends Component<{}> {
 
   render() {
     return (
-      <MyActivityIndicator />
+      <MyDatePicker />
     );
   }
 
