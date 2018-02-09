@@ -56,8 +56,8 @@ class IOS extends Component<{}> {
   constructor(props) {
     super(props)
     this.state = {
-      date: new Date(),
-      timeZoneOffsetInHours: (-1) * (new Date()).getTimezoneOffset() / 60
+      date: props.date,
+      timeZoneOffsetInHours: props.timeZoneOffsetInHours
     }
   }
 
@@ -120,10 +120,10 @@ class IOS extends Component<{}> {
 }
 
 
-// IOS.ptopTypes = {
-//   date: new Date(),
-//   timeZoneOffsetInHours: (-1) * (new Date()).getTimezoneOffset() / 60,
-// }
+IOS.defaultProps  = {
+  date: new Date(),
+  timeZoneOffsetInHours: (-1) * (new Date()).getTimezoneOffset() / 60,
+}
 
 export default class MyDatePicker extends Component<{}> {
 
