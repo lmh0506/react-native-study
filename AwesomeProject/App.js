@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   Text
 } from 'react-native'
-import MyDatePicker from './components/datePicker'
+import Upvote from './components/upvote'
 
 export default class App extends Component<{}> {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class App extends Component<{}> {
 
   render() {
     return (
-      <MyDatePicker />
+      <Upvote />
     );
   }
 
