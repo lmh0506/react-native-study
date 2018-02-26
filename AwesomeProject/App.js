@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   Text
 } from 'react-native'
-import AppView from './components/statusBar'
+import AppView from './components/webView'
 
 export default class App extends Component<{}> {
   constructor(props) {
